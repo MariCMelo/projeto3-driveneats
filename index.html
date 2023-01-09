@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+
+    <title>Driven Eats</title>
+</head>
+
+<body>
+    <header>
+        <div class="top">
+            <div class="logo">
+                DrivenEats
+            </div>
+            <div class="subtitle">
+                Sua comida em 6 minutos
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+
+        <main>
+            <div class="title">
+                Primeiro, seu prato</div>
+
+            <div class="food">
+                <div data-test="dish" class="foodContainer" onclick="foodSelect(this)">
+                    <img src="./images/strogonoff.jpg" />
+                    <div data-test="iten-name" class="optionName">
+                        Strogonoff de Frango
+                    </div>
+                    <div class="optionDescription">
+                        Arroz e batata palha
+                    </div>
+                    <div data-test="iten-price" class="optionPrice">
+                        R$ <span class="food-price">17,90</span>
+                    </div>
+                    
+                </div>
+
+                <div data-test="dish" class="foodContainer" onclick="foodSelect(this)">
+                    <img src="./images/macarrao.jpg" />
+                    <div data-test="iten-name" class="optionName">
+                        Macarrão à bolonhesa
+                    </div>
+                    <div class=" optionDescription">
+                        Com molho de tomates frescos
+                    </div>
+                    <div data-test="iten-price" class="optionPrice">
+                        R$ <span class="food-price">16,90</span>
+                    </div>
+                    
+                </div>
+
+                    <div data-test="dish" class="foodContainer" onclick="foodSelect(this)">
+                        <img src="./images/parmegiana.jpg" />
+                        <div data-test="iten-name" class="optionName">
+                            Parmegiana de Frango
+                        </div>
+                        <div class=" optionDescription">
+                            Arroz e batata palha
+                        </div>
+                        <div data-test="iten-price" class="optionPrice">
+                            R$ <span class="food-price">19,90</span>
+                        </div>
+                        
+                    </div>
+            </div>
+
+    <div class="title">
+        Agora, sua bebida
+    </div>
+
+    <div class="drink">
+        <div data-test="drink" class="drinkContainer" onclick="drinkSelect(this)">
+            <img src="./images/refrigerante.jpg" />
+            <div data-test="iten-name" class="optionName">
+                Refrigerante lata 250ml
+            </div>
+            <div class="optionDescription">
+                Lata 250ml
+            </div>
+            <div data-test="iten-price" class="optionPrice">
+                R$ <span class="drink-price">5,90</span>
+            </div>
+            
+        </div>
+
+        <div data-test="drink" class="drinkContainer" onclick="drinkSelect(this)">
+            <img src="./images/suco.jpg" />
+            <div data-test="iten-name" class="optionName">
+                Copo de suco de laranja 200ml
+            </div>
+            <div class="optionDescription">
+                Copo 200ml
+            </div>
+            <div data-test="iten-price" class="optionPrice">
+                R$ <span class="drink-price">6,90</span>
+            </div>
+            
+        </div>
+
+        <div data-test="drink" class="drinkContainer" onclick="drinkSelect(this)">
+            <img src="./images/agua.jpg" />
+            <div data-test="iten-name" class="optionName">
+                Água
+            </div>
+            <div class="optionDescription">
+                Garrafa de 300ml
+            </div>
+            <div data-test="iten-price" class="optionPrice">
+                R$ <span class="drink-price">4,90</span>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="title">
+        Por fim, sua sobremesa
+    </div>
+
+    <div class="dessert">
+        <div data-test="dessert" class="dessertContainer" onclick="dessertSelect(this)">
+            <img src="./images/pudim.jpg" />
+            <div data-test="iten-name" class="optionName">
+                Pudim de leite condensado
+            </div>
+            <div class="optionDescription">
+                Fatia 100g
+            </div>
+            <div data-test="iten-price" class="optionPrice">
+                R$ <span class="dessert-price">10,90</span>
+            </div>
+        </div>
+
+        <div data-test="dessert" class="dessertContainer" onclick="dessertSelect(this)">
+            <img src="./images/bombom.jpg" />
+            <div data-test="iten-name" class="optionName">
+                Bombom de morango
+            </div>
+            <div class="optionDescription">
+                Uma unidade
+            </div>
+            <div data-test="iten-price" class="optionPrice">
+                R$ <span class="dessert-price">8,90</span>
+            </div>
+        </div>
+
+        <div data-test="dessert" class="dessertContainer" onclick="dessertSelect(this)">
+            <img src="./images/banoffe.jpg" />
+            <div data-test="iten-name" class="optionName">
+                Banoffe de banana e doce de leite
+            </div>
+            <div class="optionDescription">
+                Fatia 100g
+            </div>
+            <div data-test="iten-price" class="optionPrice">
+                R$ <span class="dessert-price">12,90</span>
+            </div>
+        </div>
+    </div>
+    </main>
+    </div>
+
+    <footer>
+        <button data-test="order-btn" class="orderBtn" disabled onclick="finishOrder()">
+            <div class="finishPhrase">
+                Selecione os 3 itens para fechar o pedido
+            </button>
+            </div>
+
+<button data-test="confirm-order-btn" class="confirmOrderBtn hide" onclick="sendWppMsg()">Tudo certo, pode pedir!</button>
+    </footer>
+
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
